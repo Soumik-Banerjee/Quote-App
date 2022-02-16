@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root{
+    --font-color-1: #393939;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid #dcdcdc;
+}
+
+.navbar__logo{
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, red, yellow);
+    border: 4px solid #ddd;
+    border-radius: 50%;
+}
+
+.logo__svg{
+    color: #fff;
+    height: 23px;
+}
+
+.navbar__text{
+    font-size: 24px;
+    /* background: linear-gradient(180deg, red, yellow); */
+    background-clip: text;
+    color: var(--font-color-1);
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoet{
+    width: 80%;
+    padding: 10px;
+    margin-top: 30px;
+    border: 4px solid #f1f1f1;
+}
+
+.quoet__main{
+    color: var(--font-color-1);
+}
+
+.quoet__author{
+    color: var(--font-color-1);
+    margin-top: 10px;
+}
+
+.quoet__btn{
+    padding: 10px;
+    width: 100px;
+    background-color: transparent;
+    border: 4px solid #f1f1f1;
+    margin-top: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.quoet__btn:hover{
+    background-color: #d0d0d0;
+border: 4px solid #f1f1f1;
+}
+
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #000000db;
+}
+
+.loade__cont{
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 100px;
+    background: conic-gradient(red, yellow, red);
+    border: 8px solid #dcdcdc;
+    border-radius: 50%;
+    animation: rotate 500ms linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+footer{
+    background: #dcdcdc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+}
